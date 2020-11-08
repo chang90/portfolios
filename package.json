@@ -13,6 +13,8 @@
   },
   "homepage": "https://chang90.github.io/portfolios/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
