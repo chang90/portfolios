@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { ApiOutlined } from '@ant-design/icons';
 
 const FullPage = styled.section`
   background: papayawhip;
@@ -15,6 +16,11 @@ const FullPage = styled.section`
 const Title = styled.h1`
   font-size: 3rem;
   color: palevioletred;
+`;
+const Icon = styled.div`
+  color: white;
+  align-self: flex-start;
+  font-size: 26rem;
 `;
 const Wrapper = styled.section`
   padding: 4em;
@@ -37,6 +43,10 @@ class Banner extends Component {
   render() {
     return (
       <FullPage>
+        <Icon>
+          <ApiOutlined />
+        </Icon>  
+        
         <Wrapper>
           <Title>Hi,</Title>
           <TextContent>I am Chang,</TextContent>
