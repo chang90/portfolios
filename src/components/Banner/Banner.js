@@ -17,11 +17,21 @@ const Title = styled.h1`
   font-size: 3rem;
   color: palevioletred;
 `;
+
 const Icon = styled.div`
   color: white;
-  align-self: flex-start;
+  position: absolute;
+  left: 0;
+  top: 0;
   font-size: 26rem;
+  line-height:26rem;
+  z-index: 0;
+  @media (max-width: 1024px) {
+    left: -20%;
+    top: -20%;
+  }
 `;
+
 const Wrapper = styled.section`
   padding: 4em;
   width: 30%;
