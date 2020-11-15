@@ -4,6 +4,7 @@ import './App.css';
 import Banner from './components/Banner/Banner';
 import List from './components/List/List';
 import ProjectTemplate from './components/ProjectTemplate/ProjectTemplate';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [projects] = useState([
@@ -47,12 +48,12 @@ function App() {
   ]);
   return (
     <div className="App">
-        <Banner></Banner>
-        <List></List>
-        {projects.map((project, index) => (
-          <ProjectTemplate key={index} project={project} pageindex={index}/>
-      ))}
-        
+      <Banner></Banner>
+      <List></List>
+      {projects.map((project, index) => (
+        <ProjectTemplate key={index} project={project} pageindex={index}/>
+    ))}
+    <Contact></Contact>
     </div>
   );
 }
