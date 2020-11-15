@@ -19,6 +19,10 @@ const Title = styled.h3`
   margin-bottom:0.5rem;
   color: palevioletred;
   display: block;
+
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Label = styled.label`
@@ -26,6 +30,9 @@ const Label = styled.label`
   margin-bottom: -2rem;
   color: palevioletred;
   display: block;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const TechContent = styled.li`

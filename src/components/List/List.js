@@ -18,6 +18,10 @@ const Title = styled.h2`
   font-size: 2.5rem;
   color: palevioletred;
   display: block;
+  
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 `;
 const ListGroup = styled.div`
   display: flex;

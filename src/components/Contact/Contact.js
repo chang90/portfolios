@@ -23,14 +23,17 @@ const Icon = styled.div`
   font-size: 26rem;
   line-height:26rem;
   @media (max-width: 1024px) {
-    left: -20%;
-    top: -20%;
+    display: none;
   }
 `;
 
 const Title = styled.h1`
   font-size: 3rem;
   color: palevioletred;
+  text-align: center;
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const TextContent = styled.p`
