@@ -1,36 +1,42 @@
-# Getting Started with Create React App
+# Persional portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This is a simple react project for my persional protfolio.
 
-## Available Scripts
+## Technologies
 
-In the project directory, you can run:
+* node v12.18.3
+* react v17.0.1
+* styled-components 5.2.1
+* gh-pages 3.1.0
 
-### `npm start`
+## Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Make sure you already install node.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Open terminal and rediect to the project root folder, then run:
+```
+npm i
+```
 
-### `npm test`
+After installed all the npm packages, this project is able to run in http://localhost:3000/portfolios
+```
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Build
+```
+npm run predeploy
+```
 
-### `npm run build`
+## Deploy to github page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run deploy`
+Config deploy url in package.json
+```
+"homepage": "https://chang90.github.io/portfolios/"
+```
 
 Deploy this project to github page
-
+```
+npm run deploy
+```
 
