@@ -37,7 +37,7 @@ function App() {
       title: 'Split Bill Master',
       description: 'This web app can help event organizer to collect money from participants.',
       techArray: [
-        'React &amp; Material-UI -- front end',
+        'React & Material-UI -- front end',
         'NodeJS -- backend server',
         'Paypal Sandbox -- payment',
         'Heroku -- hoster'
