@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { DownloadOutlined, GithubOutlined } from '@ant-design/icons';
 import styled from 'styled-components';
 
@@ -66,10 +66,29 @@ const Button = styled.button`
   }
 `;
 
+const Image = styled.div `
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  right:20px;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  background-image: url(${props => props.url || "#"});
+  background-size: cover;
+  background-position: center;
+  @media (max-width: 1024px) {
+    position: relative;
+    bottom: initial;
+    right: initial;
+    max-width: 70vw;
+    margin-top: 10px;
+
+  }
+`
+
 function ProjectTemplate(props) {
-  console.log(props)
-  const [project] = useState(props.project);
-  const [pageindex] = useState(props.pageindex);
+  const {project, pageindex} = props;
     return (
       <Wrapper inputColor={pageindex % 2 === 0 ? 'papayawhip': 'white'}>
         <Label>Personal Project:</Label>
@@ -87,6 +106,10 @@ function ProjectTemplate(props) {
             <Button target="_blank" rel='noreferrer' href={project.github}><GithubOutlined /> GitHub</Button>
           </div>
         </div>
+        {
+          project.imageUrl && 
+          <Image url={project.imageUrl} />
+        }
       </Wrapper>
     );
 }

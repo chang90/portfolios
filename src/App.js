@@ -9,15 +9,30 @@ import Contact from './components/Contact/Contact';
 function App() {
   const [projects] = useState([
     {
+      title: 'UI-component-documentation-tool',
+      description: 'an npm package project to help developer document UI component in broswer.',
+      techArray: [
+        'esbuild',
+        'React',
+        'Redux',
+        'TypeScript',
+        'NodeJS',
+        'Lerna'
+      ],
+      imageUrl: process.env.PUBLIC_URL + '/images/uicomponenttool.png',
+      github: 'https://github.com/chang90/UI-component-documentation-tool'
+    },
+    {
       title: 'My Shopping List',
       description: 'a React Native Android app can help people to reduce food waste.',
       techArray: [
-        'React Native -- front end',
-        'SQLite -- front end database',
-        'NodeJS -- backend server (in progress)',
-        'Amazon API Gateway -- Serverless (in progress)',
-        'AWS DynamoDB -- database (planing)'
+        'React Native',
+        'SQLite',
+        'NodeJS',
+        'Amazon API Gateway',
+        'AWS DynamoDB'
       ],
+      imageUrl: process.env.PUBLIC_URL + '/images/apk.png',
       download: 'https://github.com/chang90/MyShoppingListV2/raw/master/MyShoppingList-v2.0.0.apk',
       github: 'https://github.com/chang90/MyShoppingListV2'
     },
@@ -25,11 +40,12 @@ function App() {
       title: 'My Fridge Manager',
       description: 'This web app can encourage roommates to share fridge.',
       techArray: [
-        'Bootstrap -- front end',
-        'Sinatra -- backend server',
-        'PostgreSQL -- database',
-        'Heroku -- hoster'
+        'Bootstrap',
+        'Sinatra',
+        'PostgreSQL',
+        'Heroku'
       ],
+      imageUrl: process.env.PUBLIC_URL + '/images/myfridgemanager.png',
       url: 'https://cryptic-ocean-77629.herokuapp.com/',
       github: 'https://github.com/chang90/fridge_manager'
     },
@@ -37,13 +53,25 @@ function App() {
       title: 'Split Bill Master',
       description: 'This web app can help event organizer to collect money from participants.',
       techArray: [
-        'React & Material-UI -- front end',
-        'NodeJS -- backend server',
-        'Paypal Sandbox -- payment',
-        'Heroku -- hoster'
+        'React & Material-UI',
+        'NodeJS',
+        'Paypal',
+        'Heroku'
       ],
+      imageUrl: process.env.PUBLIC_URL + '/images/collectyourmoney.png',
       url: 'https://cryptic-ocean-77629.herokuapp.com/',
       github: 'https://github.com/chang90/fridge_manager'
+    },
+    {
+      title: 'My Portfolio',
+      description: 'You are watching it now',
+      techArray: [
+        'React',
+        'Styled-component',
+        'gh-pages'
+      ],
+      url: 'https://chang90.github.io/portfolios/',
+      github: 'https://github.com/chang90/portfolios'
     }
   ]);
   return (

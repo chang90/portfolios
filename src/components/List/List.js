@@ -23,19 +23,8 @@ const Title = styled.h2`
     font-size: 1.5rem;
   }
 `;
-const ListGroup = styled.div`
-  display: flex;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
 
-const ListHeader = styled.h3`
-  font-size: 1.25rem;
-  color: palevioletred;
-`;
-
-const ListContent = styled.li`
+const ListContent = styled.p`
   font-size: 1rem;
   color: palevioletred;
 `;
@@ -54,49 +43,13 @@ const Icon = styled.div`
 class List extends Component {
   render() {
     return (
-      <Wrapper> 
-      <Title>What I can do:</Title>
-        <ListGroup>
-          <div>
-            <ListHeader>Front-End</ListHeader>
-              <ul>
-                <ListContent>React &amp; React-Native</ListContent>
-                <ListContent>Angular 9 &amp; TypeScript</ListContent>
-                <ListContent>Ngrx & Redux</ListContent>
-                <ListContent>Component library design</ListContent>
-                <ListContent>Styled Components</ListContent>
-                <ListContent>Okta & Azure AD</ListContent>
-                <ListContent>HTML5 + LESS(CSS3)</ListContent>
-                <ListContent>JavaScript &amp; jQuery</ListContent>
-                <ListContent>Bootstrap & Material-UI</ListContent>
-                <ListContent>Responsive web design</ListContent>
-                <ListContent>UX design (Axure)</ListContent>
-              </ul>
-          </div>
-          <div>
-            <ListHeader>Back-End</ListHeader>
-            <ul>
-              <ListContent>NodeJS</ListContent>
-              <ListContent>Restful API &amp; SocketIO</ListContent>
-              <ListContent>Ruby on Rails</ListContent>
-              <ListContent>.NET Core &amp; C#</ListContent>
-              <ListContent>AWS EC2 &amp; S3</ListContent>
-              <ListContent>Graphql</ListContent>
-              <ListContent>PostgreSQL</ListContent>
-              <ListContent>SQLite</ListContent>
-              <ListContent>MongoDB</ListContent>
-            </ul>
-          </div>
-          <div>
-            <ListHeader>General Skills</ListHeader>
-            <ul>
-              <ListContent>Git</ListContent>
-              <ListContent>TDD</ListContent>
-              <ListContent>Azure &amp; Docker</ListContent>
-              <ListContent>Jira</ListContent>
-            </ul>
-          </div>
-        </ListGroup>
+      <Wrapper>
+        <Title>Who am I?</Title>
+        <ListContent>I can declare that I am a Javascript developer, and I am able to write code...</ListContent>
+        <ListContent>But that is too boring, I am not just a person who able to write code.</ListContent>
+        <ListContent>I was originally coming from the printing industry with a strong design background. I am proud of that, attention to detail is in my blood!</ListContent>
+        <ListContent>I care about people, and I am a good team player ;)</ListContent>
+        <ListContent>I am passionate about new technology, and I love build things!</ListContent>
         <Icon>
           <CoffeeOutlined />
         </Icon>
