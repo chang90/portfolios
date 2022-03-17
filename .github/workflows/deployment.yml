@@ -14,6 +14,6 @@ jobs:
       env:
         EMAIL: chang.liu@gmail.com               # must be a verified email
         GH_TOKEN: ${{ secrets.ACCESS_TOKEN }} # https://github.com/settings/tokens
-        BUILD_DIR: ./*                     # "_site/" by default
+        BUILD_DIR: ./build                    # "_site/" by default
         CNAME: narno.com                      # in case of custom domain
         JEKYLL_SITE: "YES"                    # only in case of a Jekyll site
